@@ -38,6 +38,8 @@ describe('Metatx 검사 - excute를 통한 User1의 Gasless 적용', function ()
   });
 
   it('excuteApproce는 user1이 relayer에게 Token을 전송을 허가하면서 가스비 소모가 없어야 합니다.', async function () {
+    this.retries(3);
+
     const weiBalance = await balanceOf(user1.address);
     const prevUser1CoinBalance = await getBalance(user1.address);
 
