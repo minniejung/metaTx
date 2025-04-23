@@ -91,7 +91,7 @@ export const excuteTransfer = async (to: string, value: bigint) => {
   }
 };
 
-export const excuteApproce = async (spender: string, value: bigint) => {
+export const excuteApprove = async (spender: string, value: bigint) => {
   try {
     // Todo: 구현한 excute를 사용하여 token 컨트랙트의 approve(spender, value)를 gasless로 실행합니다. encodeFunctionData를 이용해주시기 바랍니다.
   } catch (error) {
